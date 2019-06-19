@@ -6,19 +6,20 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="v13-service" />
-        <module name="v13-mapper" />
-        <module name="v13-prodect-api" />
-        <module name="index-web" />
-        <module name="v13-common" />
-        <module name="v13-item-web" />
         <module name="v13-prodect-service" />
-        <module name="v13-center-web" />
-        <module name="v13-search-server" />
         <module name="v13-entity" />
-        <module name="v13-search-web" />
-        <module name="v13-web" />
+        <module name="v13-center-web" />
+        <module name="index-web" />
+        <module name="v13-search-server" />
         <module name="v13-search-api" />
+        <module name="v13-web" />
+        <module name="v13-mapper" />
+        <module name="v13-item-web" />
+        <module name="v13-common" />
+        <module name="v13-temp" />
+        <module name="v13-prodect-api" />
+        <module name="v13-search-web" />
+        <module name="v13-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
