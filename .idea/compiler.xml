@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="v13-service" />
+        <module name="v13-mapper" />
+        <module name="v13-prodect-api" />
+        <module name="index-web" />
+        <module name="v13-common" />
+        <module name="v13-item-web" />
+        <module name="v13-prodect-service" />
+        <module name="v13-center-web" />
+        <module name="v13-search-server" />
+        <module name="v13-entity" />
+        <module name="v13-search-web" />
+        <module name="v13-web" />
+        <module name="v13-search-api" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="demo" target="1.8" />
+      <module name="item-web" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="demo" options="-parameters" />
+      <module name="index-web" options="-parameters" />
+      <module name="item-web" options="-parameters" />
+      <module name="v13-center-web" options="-parameters" />
+      <module name="v13-item-web" options="-parameters" />
+      <module name="v13-mapper" options="-parameters" />
+      <module name="v13-prodect-service" options="-parameters" />
+      <module name="v13-search-server" options="-parameters" />
+      <module name="v13-search-web" options="-parameters" />
+    </option>
+  </component>
+</project>
