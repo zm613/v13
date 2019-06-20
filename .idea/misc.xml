@@ -12,6 +12,7 @@
         <option value="$PROJECT_DIR$/v13-api/v13-search-api/pom.xml" />
         <option value="$PROJECT_DIR$/v13-web/v13-search-web/pom.xml" />
         <option value="$PROJECT_DIR$/v13-web/v13-item-web/pom.xml" />
+        <option value="$PROJECT_DIR$/v13-temp/temp-springboot-rabbitmq/pom.xml" />
       </list>
     </option>
   </component>

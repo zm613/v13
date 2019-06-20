@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="v13-prodect-service" />
+        <module name="temp-rabbitmq" />
         <module name="v13-entity" />
         <module name="v13-center-web" />
         <module name="index-web" />
@@ -16,7 +17,7 @@
         <module name="v13-mapper" />
         <module name="v13-item-web" />
         <module name="v13-common" />
-        <module name="v13-temp" />
+        <module name="temp-springboot-rabbitmq" />
         <module name="v13-prodect-api" />
         <module name="v13-search-web" />
         <module name="v13-service" />
@@ -32,6 +33,7 @@
       <module name="demo" options="-parameters" />
       <module name="index-web" options="-parameters" />
       <module name="item-web" options="-parameters" />
+      <module name="temp-springboot-rabbitmq" options="-parameters" />
       <module name="v13-center-web" options="-parameters" />
       <module name="v13-item-web" options="-parameters" />
       <module name="v13-mapper" options="-parameters" />
