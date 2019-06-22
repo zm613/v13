@@ -10,3 +10,9 @@ server:
 spring:
   thymeleaf:
     cache: false
+  rabbitmq:
+    host: 192.168.254.128
+    port: 5672
+    virtual-host: /zmVirtualHosts
+    username: zm
+    password: 123456

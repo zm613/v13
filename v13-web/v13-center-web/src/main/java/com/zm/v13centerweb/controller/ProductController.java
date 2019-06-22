@@ -4,9 +4,12 @@ import com.alibaba.dubbo.config.annotation.Reference;
 import com.github.pagehelper.PageInfo;
 import com.zm.v13.api.IProductService;
 import com.zm.v13.api.ISearchService;
+import com.zm.v13.common.constant.RabbitMQConstant;
 import com.zm.v13.common.pojo.ResultBean;
 import com.zm.v13.entity.TProduct;
 import com.zm.v13.pojo.TProductVO;
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -27,6 +30,9 @@ public class ProductController {
 
     @Reference
     private ISearchService searchService;
+
+    @Autowired
+    private RabbitTemplate rabbitTemplate;
 
     /**
      * 根据ID查询商品
@@ -77,7 +83,8 @@ public class ProductController {
     @PostMapping("add")
     public String add(TProductVO productVO) {
         Long id = iProductService.save(productVO);
-        searchService.synDataById(id);
+        //searchService.synDataById(id);
+        rabbitTemplate.convertAndSend(RabbitMQConstant.CENTER_PRODUCT_EXCHANGE, "product.add", id);
         return "redirect:/product/page/1/1";
     }
 
